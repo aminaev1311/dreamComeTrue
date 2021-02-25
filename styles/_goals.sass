@@ -1,0 +1,106 @@
+.goal
+    color: $text-color
+    &__header
+        display: flex
+        margin-bottom: 40px
+    &__timeline
+        background: white
+        margin-right: 24px
+        width: 100%
+    &__score
+        background: white
+    &__details
+        display: none
+    &__item
+        display: block
+        // align-items: center
+        background-color: white
+        margin-bottom: 40px
+        padding: 16px
+        &__new
+            display: flex
+            align-items: center
+            & li
+                border: 1px solid $text-color
+                margin-right: 8px
+                border-radius: 28px
+                padding: 6px
+    &__description
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        color: $text-color
+        &__icons
+            display: flex
+            align-items: center
+            justify-content: space-between
+            position: relative
+            & i
+                display: block
+                padding: 12px
+            &_right
+                margin-right: 25px
+    &__bar
+        height: 3px
+        background-color: #F6F8FB
+        margin-top: 12px
+        margin-bottom: 12px
+    &__metrics
+        display: flex
+        color: $text-color
+        &__heading
+            font-weight: bold
+        &__input
+            display: inline-block
+            width: 50px
+            margin-right: 15px
+            margin-left: 15px
+            text-align: center
+            border: 0.5px solid #F6F8FB
+            box-sizing: border-box
+            border-radius: 3px
+    &__tactics
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 18px
+        &__table
+            border-spacing: 6px
+            & tbody
+                background: #F6F8FB
+            &__bar
+                height: 3px
+                width: 140px
+                background: #62A1FF
+                margin-top: 6px
+    &__actions
+        position: absolute
+        bottom: -109px
+        background-color: #fff
+        left: 0
+        display: block
+        width: 120px
+        display: none
+        z-index: 1
+        &__item
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.1px
+            color: $text-color
+            padding: 8px
+            &:hover
+                background: #C8E2FF
+    &__add
+        font-weight: bold
+        font-size: 14px
+        line-height: 20px
+        text-align: center
+        letter-spacing: 0.1px
+        color: #FFFFFF
+        padding: 4px 20px
+        background: #62A1FF
+        border: none
+        &:hover
+            color: #FFFFFF
+            background: #C8E2FF

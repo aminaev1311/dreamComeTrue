@@ -1,0 +1,179 @@
+@import vars
+
+.color-yellow
+    background: $average
+.color-green
+    background: $good
+.color-red
+    background: $bad
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-size: 16px
+
+body
+    background: $body-background
+    // font-family: 'Lato', sans-serif
+    font-family: 'Roboto', sans-serif
+
+ul
+    list-style-type: none
+
+a
+    text-decoration: none
+
+.content
+    display: flex
+
+.content-main
+    padding-top: 26px
+    padding-right: 85px
+
+.heading-main
+    font-weight: bold
+    font-size: 22px
+    line-height: 46px
+    letter-spacing: 0.2px
+    color: $text-color
+    margin-bottom: 20px
+
+.menu-left
+    display: flex
+    flex-direction: column
+    margin-right: 40px
+    &__me
+        background: #62A1FF
+        height: 80px
+        width: 256px
+        padding: 24px 12px
+        display: flex
+        align-items: center
+    &__image
+        width: 55px
+        height: 55px
+        border-radius: 55px
+        background-color: purple
+        margin-right: 12px
+    &__text-heading
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.1px
+        color: #FFFFFF
+        font-weight: 700
+    &__text-sub-heading
+        font-size: 12px
+        line-height: 20px
+        letter-spacing: 0.1px
+        color: #FFFFFF
+
+    &__buddy
+        background: #C8E2FF
+        height: 80px
+        width: 256px
+        padding: 24px 12px
+        display: flex
+        align-items: center
+    &__list
+        margin-top: 60px
+    &__item
+        height: 50px
+        width: 256px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-left: 20px
+        &:hover .menu-left__icon,
+        &:hover .menu-left__link
+            color: #62A1FF
+        &:hover .menu-left__bar
+            display: block
+        &__left
+            display: flex
+    &__icon
+        color: $text-color
+        font-size: 18px
+        line-height: 20px
+    &__link
+        display: block
+        margin-left: 18px
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.1px
+        color: $text-color
+    &__bar
+        background: #62A1FF
+        width: 5px
+        height: 50px
+        display: none
+
+.menu-up
+    &__list
+        display: flex
+    &__item
+        width: 88px
+        height: 80px
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.1px
+        color: $text-color
+        background-color: white
+        // padding-top: 30px
+        // padding-bottom: 30px
+        // padding-left: 17px
+        display: flex
+        align-items: center
+        justify-content: center
+        &:hover
+            background: #C8E2FF
+
+/* vision page start */ 
+.vision
+    height: 206px
+    display: flex
+    &__left
+        background-color: #62A1FF
+        min-width: 200px
+        flex-grow: 1
+    &__right
+        padding: 20px
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #FFFFFF
+        flex-grow: 4
+/* vision page end */
+
+/* archive page start */
+.archive
+    &__item
+        display: flex
+        align-items: center
+        background-color: white
+        margin-bottom: 17px
+    &__weeks
+        width: 100%
+        padding: 25px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        color: $text-color
+        &__icons
+            display: flex
+            align-items: center
+            justify-content: space-between
+            & i
+                display: block
+            &_right
+                margin-right: 25px
+.heading-secondary
+    padding: 16px
+    color: white
+    font-weight: 700
+    font-size: 25px
+    line-height: 46px
+/* archive page end */
+
+//styles for goals page
+@import goals
