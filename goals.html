@@ -84,17 +84,38 @@
             </nav>
             <div class="content-main">
                 <div class="goal__header">
+                    <div class="goal__badges-upper">
+                            <div class="goal__badges-first"><i class="fas fa-desktop"></i></div>
+                            <div class="goal__badges-second"><i class="fas fa-dumbbell"></i></div>                       
+                    </div>
                     <div class="goal__timeline">
                         <h1 class="heading-main">
                         Goals
                         </h1>
+                        <div class="goal__timeline__text">HTML mastery year</div>
+                        <div class="goal__timeline__progress">
+                            <progress id="yearProgress" max="10" value="10">
+                            </progress>
+                            <progress id="yearProgress" max="10" value="10"></progress>
+                            <progress id="yearProgress" max="10" value="10"></progress>
+                            <progress id="yearProgress" max="10" value="10"></progress>
+                            <progress id="yearProgress" max="10" value="10"></progress>
+                            <progress id="yearProgress" max="10" value="10"></progress>
+                            <progress id="yearProgress" max="10" value="10"></progress>
+                            <progress id="yearProgress" max="10" value="5"></progress>
+                            <progress id="yearProgress" max="10" value="0"></progress>
+                            <progress id="yearProgress" max="10" value="0"></progress>
+                            <progress id="yearProgress" max="10" value="0"></progress>
+                            <progress id="yearProgress" max="10" value="0"></progress>
+                        </div>
                     </div>
-                    <div class="goal__score">
-                        <div class="goal__score-score">45%</div>
-                        <p class="goal__score-text">average score</p>
-                    </div>
+                    <h2 class="heading-secondary color-green">91%</h2>
                 </div>
                 <ul class="goal">
+                    <div class="goal__badges color-blue">
+                        <i class="fas fa-desktop"></i>
+                        Goal 1
+                    </div>
                     <li class="goal__item">
                         <div class="goal__description">
                             <p class="goal__description__text">Record personal efficiency video course of 1 hour duration and publish it on online education platform (e.g. Udemy, Stepik, Coursera).</p>
@@ -123,7 +144,7 @@
                                     <li class="tactics__item">record one video of up to 10 mins</li>
                                     <li class="tactics__item">post one post on facebook</li>
                                     <li class="tactics__item">prepare course syllabus</li>
-                                    <li class="tactics__item">+</li>
+                                    <button class="tactics__item__btn">+</button>
                                 </ul>
                                 <div>
                                     <table class="goal__tactics__table">
@@ -222,6 +243,10 @@
                             </div>
                         </div>
                     </li>
+                    <div class="goal__badges color-purple">
+                        <i class="fas fa-dumbbell"></i>
+                        Goal 2
+                    </div>
                     <li class="goal__item">
                         <div class="goal__description">
                             <p class="goal__description__text">Visit sport club every week and reduce 10 kilos</p>
@@ -236,14 +261,17 @@
                             </div>
                         </div>
                     </li>
+                    <div class="goal__badges" style="background: #E0E0E0; text-align: center;">
+                        Goal 3
+                    </div>
                     <li class="goal__item">
                         <ul class="goal__item__new">
-                            +
-                            <li>family</li>
-                            <li>health</li>
-                            <li>business</li>
-                            <li>spiritual</li>
-                            <li>finance</li>
+                            <button class="goal__item__new__btn">+</button>
+                            <li style="color: purple; border-color: purple">family&friends</li>
+                            <li style="color: green; border-color: green">health</li>
+                            <li style="color: lightgrey; border-color: lightgrey">business</li>
+                            <li style="color: blue; border-color: blue">spiritual</li>
+                            <li style="color: lightgreen; border-color:lightgreen">finance</li>
                         </ul>
                     </li>
                     <button class="goal__add">Add more</button>
