@@ -1,12 +1,41 @@
 .goal
     color: $text-color
+    margin-bottom: 16px
+    &__badges
+        color: #fff
+        font-weight: bold
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.1px
+        padding: 6px
+        max-width: 10%
+        &-upper
+            display: flex
+            position: absolute
+            top: -16px
+            left: 16px
+        i
+            margin-right: 6px
+        &-first
+            margin-right: 6px
+            background: blue
+            border-radius: 100px
+            padding: 6px
+            color: white
+        &-second
+            padding: 6px
+            border-radius: 100px
+            background: $purple
+            color: white
     &__header
         display: flex
         margin-bottom: 40px
+        position: relative
     &__timeline
         background: white
         margin-right: 24px
         width: 100%
+        padding: 16px
     &__score
         background: white
     &__details
@@ -20,9 +49,20 @@
         &__new
             display: flex
             align-items: center
+            &__btn
+                margin-right: 9px
+                border: none
+                background-color: transparent
+                font-size: 40px
+                line-height: 40px
+                font-weight: 100
+                color: #E0E0E0
+                padding: 6px
+                &:hover
+                    background: #F6F8FB
             & li
                 border: 1px solid $text-color
-                margin-right: 8px
+                margin-right: 9px
                 border-radius: 28px
                 padding: 6px
     &__description
@@ -104,3 +144,22 @@
         &:hover
             color: #FFFFFF
             background: #C8E2FF
+progress
+    width: 5%
+    border-radius: 0
+    background: #62A1FF
+
+progress::-webkit-progress-bar
+    background-color: #C8E2FF
+    border-radius: 0px
+
+progress::-webkit-progress-value
+    background-color: #62A1FF
+    border-radius: 0px
+
+progress::-webkit-progress-value::before
+    content: '80%!!!!'
+    position: absolute
+    right: 0
+    top: -125%
+    color: black
